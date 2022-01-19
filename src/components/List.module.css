@@ -1,0 +1,48 @@
+li {
+    padding: 0.5rem;
+    width: 250px;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  span {
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 2em;
+    color: #61dafb;
+    margin-bottom: 0;
+  }
+  
+
+  .liste ul {
+    justify-content: center;
+  }
+  
+  .ajoutChaudron {
+    margin: 20px auto;
+    width: 150px;
+  }
+
+  button {
+    width: 100px;
+    padding: 12px;
+    margin: 5px 0;
+    background-color: #bec664;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .liste {
+    display: flex;
+    flex-direction: column;
+  }
+  button:hover,
+  button:focus {
+    background-color: #61dafb;
+  }
+  
