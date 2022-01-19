@@ -1,7 +1,9 @@
+import { useState } from 'react'
 import "./App.css";
 import Chaudron from "./components/Chaudron";
 import Liste from "./components/Liste";
 import Potions from "./components/Potions";
+import ProfPref from './ProfPref';
 
 function App() {
   const potionsMagiques = [
@@ -45,11 +47,16 @@ function App() {
       id: "3",
     },
   ];
+
+  const [prof, setProf] = useState('Gabriel');
+
   return (
     <div className="App">
-      <Potions potionsMagiques={potionsMagiques} />
-      <Liste potionsMagiques={potionsMagiques} />
-      <Chaudron />
+        <Potions potionsMagiques={potionsMagiques} />
+        <Liste potionsMagiques={potionsMagiques} />
+        <Chaudron />
+        <p>Mon professeur de potion préféré est: <span>{prof}</span></p>
+        <ProfPref setProf={setProf}/>
     </div>
   );
 }

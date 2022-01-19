@@ -1,6 +1,7 @@
 import Card from "./Card";
 
 export default function Potions(props) {
+  
   const cartesPotions = props.potionsMagiques.map((item) => {
 
     return (
