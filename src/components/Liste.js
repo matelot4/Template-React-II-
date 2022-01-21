@@ -5,14 +5,14 @@ function Liste(props) {
   const [count, setCount] = useState(0);
 
   function prendreIngredient(){
-    setCount((prevCount) => count + 1 )
+    setCount((prevCount) => prevCount + 1 )
   }
 
   function retirerIngredient(){
     if (count <=0) {
       setCount(0)
     } else {
-      setCount((prevCount) => count - 1)
+      setCount((prevCount) => prevCount - 1)
     }
   }
 
