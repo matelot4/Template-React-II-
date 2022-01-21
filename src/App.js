@@ -3,7 +3,7 @@ import "./App.css";
 import Chaudron from "./components/Chaudron";
 import Liste from "./components/Liste";
 import Potions from "./components/Potions";
-import ProfPref from './ProfPref';
+import ProfPref from './components/ProfPref';
 
 function App() {
   const potionsMagiques = [
